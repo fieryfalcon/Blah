@@ -1,0 +1,88 @@
+.following-container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #424255 0%, rgba(45, 45, 62, 0) 100%);
+  border-radius: 8px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 62px;
+  width: 1098px;
+}
+
+.following-item {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 15px;
+  padding-top: 5px;
+  /* Slightly lighter than the container for contrast */
+  margin-bottom: 10px; /* Space between items */
+  border-bottom: 1px solid #FFFFFF33
+}
+
+.user-logo{
+  margin-left: 44px;
+}
+
+
+.following-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.followers , .following{
+  margin-left: 161px;
+}
+
+.bold-number{
+  font-weight: 700;
+}
+
+.following-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #61dafb;
+}
+
+.following-handle {
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+.following-stats {
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+.unfollow-button {
+  background: #2D2D3E;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s;
+  margin-left: 161px;
+}
+
+.unfollow-button:hover {
+  background-color: #ff4c4c;
+}
+
+@media (max-width: 768px) {
+  .following-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .following-stats {
+    margin-top: 10px;
+  }
+
+  .unfollow-button {
+    align-self: center;
+    margin-top: 10px;
+  }
+}

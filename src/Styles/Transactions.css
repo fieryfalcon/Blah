@@ -1,0 +1,60 @@
+.outer{
+  background: linear-gradient(180deg, #424255 0%, rgba(45, 45, 62, 0) 100%);
+  width: 1098px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 62px;
+  border-radius: 8px;
+}
+
+.transactions-table {
+  color: #ffffff;
+  width: 986px;
+  margin: auto;
+}
+
+.transactions-table table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 0.5rem 1rem; /* Padding for table cells */
+  text-align: center;
+}
+
+.transactions-table th {
+  padding : 30px 0 30px 0;
+  border-bottom: 1px solid #FFFFFF33
+}
+
+.transactions-table tbody {
+  margin-top: 10px; /* Adjust this value to set the margin between tbody and thead */
+}
+
+.transactions-table tbody tr:hover {
+  background-color: #0f3460; /* Hover effect for table rows */
+}
+
+.timestamp{
+  color: #FFFFFF99;
+}
+
+.crypto-symbol {
+  display: inline-block;
+  width: 20px; /* Size of the icon */
+  height: 20px;
+  margin-right: 10px; /* Space between the icon and the text */
+  vertical-align: middle; /* Align the icon with the text */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Add responsive styling if necessary */
+@media (max-width: 768px) {
+  .transactions-table th,
+  .transactions-table td {
+    padding: 0.5rem; /* Smaller padding on smaller screens */
+  }
+}
